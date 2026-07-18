@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://fb-restauracoes.pages.dev/sitemap.xml

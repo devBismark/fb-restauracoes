@@ -1,27 +1,32 @@
 # FB Restaurações
 
-Landing page estática preparada para GitHub e Cloudflare Pages.
+Landing page estática publicada com GitHub e Cloudflare Pages.
 
-## Publicação no Cloudflare Pages
+## Endereço atual
 
-1. Envie o conteúdo desta pasta para a raiz de um repositório GitHub.
-2. No Cloudflare, abra **Workers & Pages** e conecte o repositório.
-3. Use `None` como framework preset.
-4. Deixe o comando de build vazio.
-5. Use `/` como diretório de saída.
+- https://fb-restauracoes.pages.dev/
 
-## Antes do domínio definitivo
+## Configuração no Cloudflare Pages
 
-Substitua `https://SEU-DOMINIO.com.br/` em:
+- Framework preset: `None`
+- Build command: vazio
+- Build output directory: `.`
+- Production branch: `main`
 
-- `index.html`
-- `robots.txt`
-- `sitemap.xml`
+## Atualizações
 
-## Commit inicial
+Qualquer `git push` para a branch `main` inicia uma nova publicação automática.
 
 ```bash
-git init
 git add .
-git commit -m "feat: publica landing page da FB Restaurações"
+git commit -m "fix: refina conteúdo e configurações de produção"
+git push
 ```
+
+## Domínio próprio
+
+Quando um domínio próprio for conectado, atualizar a URL em:
+
+- `index.html` (`canonical` e `og:url`)
+- `robots.txt`
+- `sitemap.xml`
